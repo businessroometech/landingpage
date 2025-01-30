@@ -5,6 +5,8 @@ import businessman2 from "../../assets/portrait-business-person-work.jpg"
 import gradient from "../../assets/v960-ning-31.jpg"
 import imagelogo from "../../assets/br blue.png"
 import { Container, Row, Col } from "react-bootstrap";
+import CardComponent from "./CardComponent";
+import CardComponent2 from "./CardComponent2";
 const AboutSection: React.FC = () => {
   return (
     <>
@@ -105,155 +107,126 @@ const AboutSection: React.FC = () => {
       
     </div>
     
-    
-    <div className="about7-section-area sp1" id="about" style={{backgroundImage: `url(${gradient})`, marginRight:"20px"}} >
-    <Container >
-      <Row>
-        <Col lg={7} className="m-auto">
-          <div className="about-header text-center heading12">
-            <h5>About Us</h5>
-            <h2 className="text-anime-style-3">
-              Unveiling the Faces And Mission Of Our Digital Marketing Agency
-            </h2>
-          </div>
-        </Col>
-      </Row>
-      <Row>
-        <Col lg={3}>
-          <div className="about-pera-list" >
-            <h1 data-aos="fade-right" data-aos-duration="800">
-            Businessroom Live
-            </h1>
-            <div className="space8"></div>
-            <div data-aos="fade-right" data-aos-duration="1000">
+    {/*.....................................................................................*/}
 
-              <p >
-
-              Pitch your idea to a global community and build meaningful connections
-
-
-
-              </p>
-              {/* <ul>
-                <li>
-                  <img src="/assets/img/icons/check11.svg" alt="Check" />{" "}
-                  Digital Marketing
-                </li>
-                <li>
-                  <img src="/assets/img/icons/check11.svg" alt="Check" />{" "}
-                  Marketing Agency
-                </li>
-                <li>
-                  <img src="/assets/img/icons/check11.svg" alt="Check" />{" "}
-                  SEO Optimization
-                </li>
-                <li>
-                  <img src="/assets/img/icons/check11.svg" alt="Check" />{" "}
-                  First Working Process
-                </li>
-              </ul> */}
-            </div>
-            <div className="space32"></div>
-            <div
-              className="btn-area1"
-              data-aos="fade-right"
-              data-aos-duration="1200"
-            >
-              <Link to="/about" className="header-btn13">
-                More About Us <i className="fa-solid fa-arrow-right"></i>
-              </Link>
+    <div 
+      className="hero1-section-area"
+      style={{ backgroundImage: `url(${gradient})`,  }}
+    >
+      {/* <img
+        src="/assets/img/elements/elements1.png"
+        alt=""
+        className="elements1 aniamtion-key-1"
+      /> */}
+      <div className="container" style={{}}>
+        <div className="row align-items-center"style={{marginLeft:"-7%" , }} >
+          <div className="col-lg-6">
+            <div className="header-main-content heading1" style={{marginTop : '-150px'}}>
+              {/* <h5>
+                <img src="/assets/img/icons/logo-icons.svg" alt="" />Top #1
+                SEO & Marketing Agency
+              </h5> */}
+              <h1 className="" style={{color : '#2C3E50'}} >
+               Acquireroom
+              </h1>
+              <h4 data-aos="fade-left" data-aos-duration="1000" 
+                  style={{color : '#2C3E50' ,fontSize : '1.5rem', fontWeight: '600', lineHeight : '1.6', maxWidth : '800px'}}>
+                  A no-brokerage marketplace for online business acquisitions
+                  <br class="d-lg-block d-none" />
+                  Provides clear insights into financials, traffic, and business operations.
+              </h4>
+              <div
+              
+                className="btn-area"
+                data-aos="fade-left"
+                data-aos-duration="1200"
+              >
+                 <Link to="/contact" className="header-btn1">
+                  Start Ranking Now
+                  <span>
+                    <i className="fa-solid fa-arrow-right"></i>
+                  </span>
+                </Link> 
+                 <Link to="/contact" className="header-btn2">
+                  Contact Now
+                  <span>
+                    <i className="fa-solid fa-arrow-right"></i>
+                  </span>
+                </Link> 
+              </div>
             </div>
           </div>
-        </Col>
-        <Col lg={7}>
-          <div className="about-images">
-            <Row>
-              <Col lg={6} md={6}>
-                <div className="img1">
+
+
+
+          <div className="col-lg-6">
+            <div className="header-images-area">
+              <div className="main-images-area">
+                <div className="img1" style={{height: "700px"}}>
+                  
+
+<div style={{ height:"800px", width:"450px", borderRadius:"20px", marginTop:"20px"}}>
+
+<CardComponent2></CardComponent2>
+
+</div>
+
+{/* <div style={{border:"solid Blue", height:"350px", width:"300px", marginLeft:"370px", marginTop:"-150px" , borderRadius:"20px"}}></div> */}
+
+                </div>
+                {/* <div className="img2">
+                  <img src="/assets/img/bg/header-imgbg.png" alt="" />
+                </div> */}
+                {/* <div className="icons-area">
                   <img
-                    src="/assets/img/all-images/about-img7.png"
-                    alt="About Image 7"
+                    src="/assets/img/icons/sound-icons1.svg"
+                    alt=""
+                    className="sound-icons1 aniamtion-key-1"
                   />
-                  <div className="counter-area">
-                    <h2>
-                      <span className="counter">16</span>K+
-                    </h2>
-                    <p>Customer Satisfied</p>
-                  </div>
-                </div>
-              </Col>
-              <Col lg={6} md={6} data-aos="zoom-in" data-aos-duration="1000">
-                <div className="space80 d-lg-block d-none"></div>
-                <div className="space30 d-lg-none d-block"></div>
-                <div className="img2">
                   <img
-                    src="/assets/img/all-images/about-img8.png"
-                    alt="About Image 8"
+                    src="/assets/img/icons/lite-icons1.svg"
+                    alt=""
+                    className="lite-icons1 aniamtion-key-1"
                   />
-                </div>
-              </Col>
-            </Row>
+                </div> */}
+                {/* <div className="auhtor-icons">
+                  <img
+                    src="/assets/img/elements/elements2.png"
+                    alt=""
+                    className="elements2"
+                  />
+                  <img
+                    src="/assets/img/elements/elements3.png"
+                    alt=""
+                    className="elements3"
+                  />
+                </div> */}
+                {/* <div className="auhtor-images">
+                  <img
+                    src="/assets/img/all-images/header-author-img1.png"
+                    alt=""
+                    className="header-author-img1 aniamtion-key-2"
+                  />
+                  <img
+                    src="/assets/img/all-images/header-author-img2.png"
+                    alt=""
+                    className="header-author-img2 aniamtion-key-2"
+                  />
+                </div> */}
+              </div>
+            </div>
           </div>
-        </Col>
-        <Col lg={2}>
-          <div className="counter-boxarea">
-            <Row>
-              <Col lg={12} md={6} xs={6}>
-                <div
-                  className="counter-box"
-                  data-aos="zoom-out"
-                  data-aos-duration="800"
-                >
-                  <h1>Acquireroom</h1>
-                  <h4>A no-brokerage marketplace for online business acquisitions</h4>
-                  {/* {/* <h2>
-                    <span className="counter">500</span>+
-                  </h2> }
-                  <p>Campaigns</p>
-                </div>
-              </Col>
-              <Col lg={12} md={6} xs={6}>
-                <div
-                  className="counter-box"
-                  data-aos="zoom-out"
-                  data-aos-duration="1000"
-                >
-                  <h2>
-                    <span className="counter">98</span>%
-                  </h2>
-                  <p>Client Satisfaction</p>
-                </div>
-              </Col>
-              <Col lg={12} md={6} xs={6}>
-                <div
-                  className="counter-box"
-                  data-aos="zoom-out"
-                  data-aos-duration="1100"
-                >
-                  <h2>
-                    <span className="counter">25</span>+
-                  </h2>
-                  <p>Country Reach</p> */}
-                </div>
-              </Col>
-              <Col lg={12} md={6} xs={6}>
-                <div
-                  className="counter-box"
-                  data-aos="zoom-out"
-                  data-aos-duration="1200"
-                >
-                  {/* <h2>
-                    <span className="counter">15</span>+
-                  </h2>
-                  <p>Certified Experts</p> */}
-                </div>
-              </Col>
-            </Row>
-          </div>
-        </Col>
-      </Row>
-    </Container>
-  </div>
+
+
+
+        </div>
+      </div>
+    </div>
+
+
+
+
+
 </>
 
   );
