@@ -7,6 +7,11 @@ import imagelogo from "../../assets/br blue.png"
 import { Container, Row, Col } from "react-bootstrap";
 import CardComponent from "./CardComponent";
 import CardComponent2 from "./CardComponent2";
+import Features from "./Components/Features";
+import MyDeals from "./Components/Deals";
+import ChatInterface from "./Components/Chats";
+import Logo from '../../assets/title 02 (1).png';
+import DottedLineAnimation from "./Components/DottedLine";
 const AboutSection: React.FC = () => {
   return (
     <>
@@ -47,7 +52,7 @@ const AboutSection: React.FC = () => {
           <div className="col-lg-5">
             <div className="about-content-area heading2">
               <div className="arrow-circle">
-                {/* <Link to="/about">
+                <Link to="/about">
                   <img
                     src="/assets/img/elements/elements4.png"
                     alt="Element"
@@ -58,7 +63,7 @@ const AboutSection: React.FC = () => {
                     alt="Arrow"
                     className="arrow"
                   />
-                </Link> */}
+                </Link>
               </div>
               <h2 className="text-anime-style-3" style={{fontSize:"40px", marginLeft:"25px" }}>
               Fostering connections between  co-founders and investors 
@@ -110,22 +115,52 @@ const AboutSection: React.FC = () => {
     {/*.....................................................................................*/}
 
     <div 
-      className="hero1-section-area"
-      style={{ backgroundImage: `url(${gradient})`,  }}
+      style={{ backgroundColor : '#f8faff',height : '100vh',display : 'flex',flexDirection : 'column',alignItems : 'center',justifyContent : 'center'}}
     >
       {/* <img
         src="/assets/img/elements/elements1.png"
         alt=""
         className="elements1 aniamtion-key-1"
       /> */}
-      <div className="container" style={{}}>
-        <div className="row align-items-center"style={{marginLeft:"-7%" , }} >
+      
+      <div style={{width : '100%',height : '25%', backgroundColor : ''}}>
+        <div style={{display : 'flex',alignItems : 'center',justifyContent : 'center',height : '100%'}}>
+        <h2  style={{opacity: 1, visibility: "inherit",fontSize : 50,fontWeight : 'bolder',textAlign : 'center'}}>
+        A no-brokerage marketplace<br/> for online business acquisitions</h2>
+        </div>
+      </div>
+      <DottedLineAnimation/>
+
+      <div style={{width : '100%',height : '75%',display : 'flex'}}>
+          <div style={{width : '33.33333%',height : 'full',display : 'flex',justifyContent : 'center',paddingTop : '60px'}}>
+            <div style={{width : '370px',marginTop : '-110px',scale : '0.80',marginLeft : '60px'}}>
+             <ChatInterface/>
+             <h1 style={{fontSize : 50,fontWeight : 'bolder',textAlign : 'center',marginTop : '45px',color : '#25224a'}}>Sellers</h1>
+             <div style={{display : 'flex',alignItems : 'center',justifyContent : 'center'}}>
+        <h2  style={{opacity: 1, visibility: "inherit",fontSize : 25,fontWeight : 'bolder',textAlign : 'center',color : '#464664',paddingTop : '20px'}}>Unlock the full potential of your exit</h2>
+        </div>
+            </div>
+          </div>
+          <div style={{width : '33.33333%',height : 'full',display : 'flex',justifyContent : 'center',paddingTop : '60px'}}>
+            <div style={{width : '370px',marginTop : '-110px',scale : '0.80'}}>
+              <Features />
+            </div>
+            
+          </div>
+          <div style={{width : '33.33333%',height : 'full',display : 'flex',justifyContent : 'center',paddingTop : '60px'}}>
+            <div style={{width : '360px',marginTop : '-110px', scale : '0.80',marginRight : '60px'}}>
+                <MyDeals/>
+              <h1 style={{fontSize : 50,fontWeight : 'bolder',textAlign : 'center',marginTop : '45px',color : '#25224a'}}>Buyers</h1>
+             <div style={{display : 'flex',alignItems : 'center',justifyContent : 'center'}}>
+        <h2  style={{opacity: 1, visibility: "inherit",fontSize : 25,fontWeight : 'bolder',textAlign : 'center',color : '#464664',paddingTop : '20px'}}>Discover the perfect startup for you</h2>
+        </div>
+            </div>
+          </div>
+      </div>
+      {/* <div style={{width : '100%',backgroundColor : 'black'}}>
+        <div className="row align-items-center"style={{marginLeft:"-7%",}} >
           <div className="col-lg-6">
             <div className="header-main-content heading1" style={{marginTop : '-150px'}}>
-              {/* <h5>
-                <img src="/assets/img/icons/logo-icons.svg" alt="" />Top #1
-                SEO & Marketing Agency
-              </h5> */}
               <h1 className="" style={{color : '#2C3E50'}} >
                Acquireroom
               </h1>
@@ -165,54 +200,15 @@ const AboutSection: React.FC = () => {
                 <div className="img1" style={{height: "700px"}}>
                   
 
-<div style={{ height:"800px", width:"450px", borderRadius:"20px", marginTop:"20px"}}>
+<div style={{ borderRadius:"20px", marginTop:"20px"}}>
 
 <CardComponent2></CardComponent2>
 
 </div>
 
-{/* <div style={{border:"solid Blue", height:"350px", width:"300px", marginLeft:"370px", marginTop:"-150px" , borderRadius:"20px"}}></div> */}
-
                 </div>
-                {/* <div className="img2">
-                  <img src="/assets/img/bg/header-imgbg.png" alt="" />
-                </div> */}
-                {/* <div className="icons-area">
-                  <img
-                    src="/assets/img/icons/sound-icons1.svg"
-                    alt=""
-                    className="sound-icons1 aniamtion-key-1"
-                  />
-                  <img
-                    src="/assets/img/icons/lite-icons1.svg"
-                    alt=""
-                    className="lite-icons1 aniamtion-key-1"
-                  />
-                </div> */}
-                {/* <div className="auhtor-icons">
-                  <img
-                    src="/assets/img/elements/elements2.png"
-                    alt=""
-                    className="elements2"
-                  />
-                  <img
-                    src="/assets/img/elements/elements3.png"
-                    alt=""
-                    className="elements3"
-                  />
-                </div> */}
-                {/* <div className="auhtor-images">
-                  <img
-                    src="/assets/img/all-images/header-author-img1.png"
-                    alt=""
-                    className="header-author-img1 aniamtion-key-2"
-                  />
-                  <img
-                    src="/assets/img/all-images/header-author-img2.png"
-                    alt=""
-                    className="header-author-img2 aniamtion-key-2"
-                  />
-                </div> */}
+                
+                
               </div>
             </div>
           </div>
@@ -220,7 +216,7 @@ const AboutSection: React.FC = () => {
 
 
         </div>
-      </div>
+      </div> */}
     </div>
 
 

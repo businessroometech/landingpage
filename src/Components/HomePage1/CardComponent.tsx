@@ -218,7 +218,7 @@ function Card(style) {
 function CardComponent() {
   return (
     <>
-    <div style={{position : 'absolute',zIndex : 50,marginTop : '-108px'}}>
+    <div style={{position : 'absolute',zIndex : 50,marginTop : '-108px',marginLeft : '85px'}}>
         <svg width="600" height="600" viewBox="0 0 200 100" xmlns="http://www.w3.org/2000/svg">
             <rect x="10" y="10" width="140" height="138" rx="10" ry="10" 
                     fill="none" stroke="black" stroke-width="1.1" stroke-dasharray="6 3">

@@ -68,7 +68,7 @@ const Hero: React.FC = () => {
                 <div className="img1" style={{height: "700px"}}>
                   
 
-<div style={{ height:"800px", width:"450px", borderRadius:"20px", marginTop:"20px"}}>
+<div style={{ marginRight : '45px', marginTop:"20px"}}>
 
 <CardComponent ></CardComponent>
 
