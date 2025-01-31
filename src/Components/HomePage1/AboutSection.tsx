@@ -3,14 +3,9 @@ import { Link } from "react-router-dom";
 import businessman from "../../assets/businessmen-thumbs-up-looking-camera.jpg"
 import businessman2 from "../../assets/portrait-business-person-work.jpg"
 import gradient from "../../assets/v960-ning-31.jpg"
-import imagelogo from "../../assets/br blue.png"
-import { Container, Row, Col } from "react-bootstrap";
-import CardComponent from "./CardComponent";
-import CardComponent2 from "./CardComponent2";
 import Features from "./Components/Features";
 import MyDeals from "./Components/Deals";
 import ChatInterface from "./Components/Chats";
-import Logo from '../../assets/title 02 (1).png';
 import DottedLineAnimation from "./Components/DottedLine";
 const AboutSection: React.FC = () => {
   return (

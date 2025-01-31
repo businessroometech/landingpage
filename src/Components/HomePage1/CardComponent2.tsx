@@ -1,8 +1,8 @@
-import React from 'react';
+import { CSSProperties} from "react";
 import businessPitch1 from "../../assets/Pitch Deck Layout with Green Accents Stock Template.jpeg";
 import businessPitch2 from "../../assets/businessmen-thumbs-up-looking-camera.jpg";
 
-function Card({ imageSrc, style }) {
+function Card({ imageSrc, style } : {imageSrc : string,style : CSSProperties}) {
   const cardStyle = {
     width: '360px', 
     height: "500px",
@@ -17,7 +17,7 @@ function Card({ imageSrc, style }) {
     justifyContent: 'center',
     overflow: 'hidden', // Ensures image does not exceed card boundaries
   };
-  const imageStyle = {
+  const imageStyle : CSSProperties = {
     width: '100%', // Ensures it stretches to full width
     height: '100%', // Ensures it fills the height
     objectFit: 'cover', // Keeps aspect ratio while covering the card
@@ -50,10 +50,10 @@ function CardComponent2() {
         justifyContent: 'center'
       }}>
         <div style={{ marginRight: '65px', marginTop: '-185px', zIndex: 100 }}>
-          <Card imageSrc={businessPitch1} style={undefined} />
+          <Card imageSrc={businessPitch1} style={{}} />
         </div>
         <div style={{ marginTop: '136px', zIndex: 100 }}>
-          <Card imageSrc={businessPitch2} style={undefined} />
+          <Card imageSrc={businessPitch2} style={{}} />
         </div>
       </div>
     </>

@@ -9,7 +9,6 @@ import ServiceSection from "../../Components/HomePage1/ServiceSection";
 import ServiceSection2 from "../../Components/Common/ServiceSection2";
 import Header from "../../Layouts/Header";
 import Footer from "../../Layouts/Footer";
-import CompanySliderSection from "../../Components/Common/CompanySliderSection";
 import MobileHeaderSidebar from "../../Layouts/MobileHeader";
 
 const HomePage1 = () => {

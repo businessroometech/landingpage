@@ -1,10 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import ladyimage from "../../assets/people-connecting-web-network-diagram-background-b.png"
 import gradient from "../../assets/v960-ning-31.jpg"
-import { url } from "inspector";
-import { Car } from "lucide-react";
-import { Card } from "react-bootstrap";
 import CardComponent from "./CardComponent";
 
 
@@ -36,7 +31,7 @@ const Hero: React.FC = () => {
               <h4 data-aos="fade-left" data-aos-duration="1000" 
                   style={{color : '#2C3E50' ,fontSize : '1.5rem', fontWeight: '600', lineHeight : '1.6', maxWidth : '800px'}}>
                   Empowering connections between visionary founders, strategic investors, and ambitious acquirers,  
-                  <br class="d-lg-block d-none" />
+                  <br className="d-lg-block d-none" />
                   fostering collaboration, growth, and opportunities<br/> across the startup ecosystem.
               </h4>
               <div
