@@ -1,6 +1,6 @@
-import React from 'react';
+// import React from 'react';
 import { 
-  LineChart, 
+  // LineChart, 
   PieChart, 
   BarChart, 
   TrendingUp, 
@@ -11,7 +11,7 @@ import {
   ArrowDownRight
 } from 'lucide-react';
 
-function Card(style) {
+function Card(style: any) {
   const cardStyle = {
     width: '360px', // Increased width to fit content
     padding: '28px',

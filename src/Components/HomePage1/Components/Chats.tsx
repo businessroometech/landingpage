@@ -1,4 +1,4 @@
-import React from 'react';
+// import React from 'react';
 import Lady from '../../../assets/Lady.jpg';
 import Man from '../../../assets/Men.jpg';
 
