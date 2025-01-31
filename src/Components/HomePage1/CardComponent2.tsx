@@ -28,7 +28,8 @@ function Card({ imageSrc, style } : {imageSrc : string,style : CSSProperties}) {
   return (
     <div style={{ ...cardStyle, ...style }}>
     <img src={imageSrc} alt="Business Pitch" 
-         style={imageStyle} />
+        //  style={imageStyle} 
+         />
   </div>
   );
 }

@@ -48,6 +48,7 @@
 
 const BenefitsSection = () => {
   // const [activeIndex, setActiveIndex] = useState(0);
+  // const [activeIndex, setActiveIndex] = useState(0);
 
   return (
     <div className="case1-section-area">

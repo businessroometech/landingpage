@@ -8,9 +8,9 @@ import CardComponent from "./CardComponent";
 
 const Hero: React.FC = () => {
   return (
-    <div 
+    <div
       className="hero1-section-area"
-      style={{ backgroundImage: `url(${gradient})`,  }}
+      style={{ backgroundImage: `url(${gradient})`, }}
     >
       {/* <img
         src="/assets/img/elements/elements1.png"
@@ -18,15 +18,15 @@ const Hero: React.FC = () => {
         className="elements1 aniamtion-key-1"
       /> */}
       <div className="container" style={{}}>
-        <div className="row align-items-center"style={{marginLeft:"-7%" , }} >
+        <div className="row align-items-center" style={{ marginLeft: "-7%", }} >
           <div className="col-lg-6">
-            <div className="header-main-content heading1" style={{marginTop : '-150px'}}>
+            <div className="header-main-content heading1" style={{ marginTop: '-150px' }}>
               {/* <h5>
                 <img src="/assets/img/icons/logo-icons.svg" alt="" />Top #1
                 SEO & Marketing Agency
               </h5> */}
-              <h1 className="" style={{color : '#2C3E50'}} >
-              The Game-changing community of Founders, Investors, and Acquirers
+              <h1 className="" style={{ color: '#2C3E50' }} >
+                The Game-changing community of Founders, Investors, and Acquirers
               </h1>
               <h4 data-aos="fade-left" data-aos-duration="1000" 
                   style={{color : '#2C3E50' ,fontSize : '1.5rem', fontWeight: '600', lineHeight : '1.6', maxWidth : '800px'}}>
@@ -60,16 +60,16 @@ const Hero: React.FC = () => {
           <div className="col-lg-6">
             <div className="header-images-area">
               <div className="main-images-area">
-                <div className="img1" style={{height: "700px"}}>
-                  
+                <div className="img1" style={{ height: "700px" }}>
 
-<div style={{ marginRight : '45px', marginTop:"20px"}}>
 
-<CardComponent ></CardComponent>
+                  <div style={{ marginRight: '45px', marginTop: "20px" }}>
 
-</div>
+                    <CardComponent ></CardComponent>
 
-{/* <div style={{border:"solid Blue", height:"350px", width:"300px", marginLeft:"370px", marginTop:"-150px" , borderRadius:"20px"}}></div> */}
+                  </div>
+
+                  {/* <div style={{border:"solid Blue", height:"350px", width:"300px", marginLeft:"370px", marginTop:"-150px" , borderRadius:"20px"}}></div> */}
 
                 </div>
                 {/* <div className="img2">
