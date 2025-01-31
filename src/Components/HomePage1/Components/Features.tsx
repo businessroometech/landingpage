@@ -65,8 +65,8 @@ const Features = () => {
               fontSize: '32px',
               fontWeight: 'bold'
             }}>
-              <span style={{ color: '#4361ee' }}>A</span>
-              <span style={{ color: '#1f2937' }}>cquireroom</span>
+              {/* <span style={{ color: '#4361ee' }}>A</span> */}
+              <span style={{ color: '#1f2937' }}>Acquireroom</span>
               {/* <span style={{ color: '#6b7280', fontSize: '18px',marginTop : '11px' }}>.com</span> */}
             </span>
           </div>

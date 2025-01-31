@@ -20,9 +20,9 @@ const Cta2Section: React.FC<{ btnClass?: string }> = ({ btnClass }) => {
           <Col lg={12} className="m-auto">
             <div className="cta-header-area text-center sp4 heading2">
               <h2 className="text-anime-style-1">
-                Ready To Take Your SEO To
+              Connect, collaborate, and grow 
                 <br className="d-md-block d-none" />
-                The Next Level
+                within a dynamic ecosystem .
               </h2>
               <p data-aos="fade-up" data-aos-duration="1000">
                 Effective SEO strategies not only elevate a website's visibility

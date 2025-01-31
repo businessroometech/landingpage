@@ -1,15 +1,15 @@
 import { LineChart, Line, YAxis, XAxis } from 'recharts';
-
+import Img from '../../assets/vetical.jpg'
 const StartupLanding = () => {
-  const chartData = [
-    { month: 'Jan', value: 30 },
-    { month: 'Feb', value: 45 },
-    { month: 'Mar', value: 65 },
-    { month: 'Apr', value: 58 },
-    { month: 'May', value: 75 },
-    { month: 'Jun', value: 85 },
-    { month: 'Jul', value: 95 }
-  ];
+  // const chartData = [
+  //   { month: 'Jan', value: 30 },
+  //   { month: 'Feb', value: 45 },
+  //   { month: 'Mar', value: 65 },
+  //   { month: 'Apr', value: 58 },
+  //   { month: 'May', value: 75 },
+  //   { month: 'Jun', value: 85 },
+  //   { month: 'Jul', value: 95 }
+  // ];
 
   const Feature = ({ text } : {text : string}) => (
     <div style={{
@@ -18,9 +18,9 @@ const StartupLanding = () => {
       marginBottom: '16px',
       gap: '12px'
     }}>
-      <div style={{
-        width: '24px',
-        height: '24px',
+      {/* <div style={{
+        width: '30px',
+        height: '30px',
         borderRadius: '50%',
         backgroundColor: '#4f46e5',
         display: 'flex',
@@ -30,10 +30,10 @@ const StartupLanding = () => {
         fontSize: '16px'
       }}>
         +
-      </div>
+      </div> */}
       <span style={{
         color: '#1e293b',
-        fontSize: '16px'
+        fontSize: '17px'
       }}>
         {text}
       </span>
@@ -46,13 +46,15 @@ const StartupLanding = () => {
       justifyContent: 'space-between',
       alignItems: 'center',
       padding: '48px',
-      maxWidth: '1200px',
       margin: '0 auto',
-      gap: '48px'
+      gap: '48px',
+      height : '100vh',
+      overflow : 'hidden'
     }}>
       {/* Left Content */}
       <div style={{
-        flex: '1'
+        flex: '1',
+        paddingLeft : '100px',
       }}>
         <h1 style={{
           fontSize: '48px',
@@ -65,7 +67,7 @@ const StartupLanding = () => {
         </h1>
         
         <p style={{
-          fontSize: '18px',
+          fontSize: '26px',
           color: '#475569',
           marginBottom: '32px',
           lineHeight: '1.6'
@@ -75,9 +77,9 @@ const StartupLanding = () => {
         </p>
 
         <div style={{ marginBottom: '32px' }}>
-          <Feature text="Evaluate web, customer, and financial metrics" />
-          <Feature text="Build and send LOIs and APAs in minutes" />
-          <Feature text="Get help to acquire with acquisition financing" />
+          <Feature text="Presenting your concept, project, or business proposal in a clear and compelling way to attract interest." />
+          <Feature text="The audience isn’t limited to a specific region; instead, it includes people from different cultures, industries, and backgrounds worldwide." />
+          <Feature text="Beyond just sharing an idea, the goal is to create valuable relationships, whether they be partnerships or  mentorships." />
         </div>
 
         <button style={{
@@ -93,7 +95,7 @@ const StartupLanding = () => {
           gap: '8px',
           cursor: 'pointer'
         }}>
-          Tell me more
+          Start with Us
           <span style={{ fontSize: '20px' }}>→</span>
         </button>
       </div>
@@ -101,12 +103,17 @@ const StartupLanding = () => {
       {/* Right Content - Graph Card */}
       <div style={{
         flex: '1',
-        backgroundColor: '#f8fafc',
-        borderRadius: '24px',
-        padding: '32px',
-        maxWidth: '500px'
+        marginLeft : '100px'
       }}>
-        <div style={{
+        <div style={{ height: '790px', display: 'flex', justifyContent: 'center'}}>
+  <img 
+    src={Img}
+    alt="Revenue Chart"
+    style={{ width: '100%', height: '100%', objectFit: 'contain', borderRadius: '8px' }}
+  />
+</div>
+
+        {/* <div style={{
           backgroundColor: 'white',
           borderRadius: '16px',
           padding: '24px',
@@ -154,7 +161,7 @@ const StartupLanding = () => {
               }}
             />
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );

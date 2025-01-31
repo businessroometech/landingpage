@@ -1477,7 +1477,7 @@ Location:
   transition: all 0.4s;
   top: 0;
   z-index: -1;
-  background: var(--ztc-text-text-13);
+  background: #3daef4;
   border-radius: 30px;
   visibility: hidden;
   opacity: 0;
