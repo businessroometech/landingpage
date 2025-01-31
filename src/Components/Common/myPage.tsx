@@ -1,4 +1,3 @@
-import { LineChart, Line, YAxis, XAxis } from 'recharts';
 import Img from '../../assets/vetical.jpg'
 const StartupLanding = () => {
   // const chartData = [
