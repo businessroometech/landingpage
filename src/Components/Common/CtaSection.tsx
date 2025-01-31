@@ -17,23 +17,22 @@ const CtaSection: React.FC = () => {
       <div className="container">
         <div className="row">
           <div className="col-lg-12 m-auto">
-            <div className="cta-header-area text-center sp4 heading2">
+            <div className="cta-header-area text-center sp4 heading2" style={{marginTop : '-50px'}}>
               <h2 className="text-anime-style-3">
-                Ready To Take Your SEO To <br className="d-md-block d-none" />
-                The Next Level
+              Connect, collaborate, and grow <br className="d-md-block d-none" />
+               within a dynamic ecosystem 
               </h2>
               <p data-aos="fade-up" data-aos-duration="1000">
-                Effective SEO strategies not only elevate a website's
-                visibility but also drive <br className="d-md-block d-none" />
-                targeted traffic, enhance user experience,
-              </p>
+              Engage with like-minded individuals, exchange innovative ideas,<br/> and build meaningful partnerships in a thriving <br className="d-md-block d-none" />
+              and ever-evolving community.</p>
+              
               <div
                 className="btn-area text-center"
                 data-aos="fade-up"
                 data-aos-duration="1200"
               >
                 <Link to="/contact" className="header-btn1">
-                  Free Consultation
+                  Sign Up
                   <span>
                     <i className="fa-solid fa-arrow-right"></i>
                   </span>

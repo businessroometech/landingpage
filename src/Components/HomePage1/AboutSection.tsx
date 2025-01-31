@@ -46,7 +46,7 @@ const AboutSection: React.FC = () => {
           </div>
           <div className="col-lg-5">
             <div className="about-content-area heading2">
-              <div className="arrow-circle">
+              {/* <div className="arrow-circle">
                 <Link to="/about">
                   <img
                     src="/assets/img/elements/elements4.png"
@@ -59,7 +59,7 @@ const AboutSection: React.FC = () => {
                     className="arrow"
                   />
                 </Link>
-              </div>
+              </div> */}
               <h2 className="text-anime-style-3" style={{fontSize:"40px", marginLeft:"25px" }}>
               Fostering connections between  co-founders and investors 
               </h2>
@@ -71,10 +71,10 @@ const AboutSection: React.FC = () => {
                 data-aos="fade-left"
                 data-aos-duration="1200"
               >
-               <Link to="/about" className="header-btn1">
-                  Get Started With BusinessRoom
+               <Link to="/about" className="header-btn1" style={{backgroundColor : '#3DAEF4'}}>
+                  Get Started With Businessroom
                   <span>
-                    <i className="fa-solid fa-arrow-right"></i>
+                    <i className="fa-solid fa-arrow-right" style={{color : '#3DAEF4'}}></i>
                   </span>
                 </Link> 
               </div>

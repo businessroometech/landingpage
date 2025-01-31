@@ -17,18 +17,19 @@ function Card({ imageSrc, style } : {imageSrc : string,style : CSSProperties}) {
     justifyContent: 'center',
     overflow: 'hidden', // Ensures image does not exceed card boundaries
   };
-  const imageStyle : CSSProperties = {
-    width: '100%', // Ensures it stretches to full width
-    height: '100%', // Ensures it fills the height
-    objectFit: 'cover', // Keeps aspect ratio while covering the card
-    borderRadius: '15px',
-  };
+  // const imageStyle : CSSProperties = {
+  //   width: '100%', // Ensures it stretches to full width
+  //   height: '100%', // Ensures it fills the height
+  //   objectFit: 'cover', // Keeps aspect ratio while covering the card
+  //   borderRadius: '15px',
+  // };
 
 
   return (
     <div style={{ ...cardStyle, ...style }}>
     <img src={imageSrc} alt="Business Pitch" 
-         style={imageStyle} />
+        //  style={imageStyle} 
+         />
   </div>
   );
 }
