@@ -1,4 +1,4 @@
-import React from 'react';
+// import React from 'react';
 import { LineChart, Line, YAxis, XAxis } from 'recharts';
 
 const StartupLanding = () => {
@@ -12,7 +12,7 @@ const StartupLanding = () => {
     { month: 'Jul', value: 95 }
   ];
 
-  const Feature = ({ text }) => (
+  const Feature = (text: any) => (
     <div style={{
       display: 'flex',
       alignItems: 'center',

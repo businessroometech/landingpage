@@ -1,17 +1,15 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import Slider from "react-slick";
 
-const GoogleReviews: React.FC<{ className: string }> = ({ className }) => {
-  const settings = {
-    arrows: false,
-    infinite: true,
-    centerMode: true,
-    autoplay: true,
-    speed: 2000,
-    autoplaySpeed: 3000,
-    dots: true,
-  };
+const GoogleReviews: React.FC<{ className: string }> = () => {
+  // const settings = {
+  //   arrows: false,
+  //   infinite: true,
+  //   centerMode: true,
+  //   autoplay: true,
+  //   speed: 2000,
+  //   autoplaySpeed: 3000,
+  //   dots: true,
+  // };
 
   return (
     // <div className={className || ""} id="testimonials">
@@ -98,22 +96,22 @@ const GoogleReviews: React.FC<{ className: string }> = ({ className }) => {
   );
 };
 
-const testimonials = [
-  {
-    text: "Working with SEOC has been a game-changer for our business. Their expertise in SEO and digital marketing has helped us achieve remarkable results and significantly increase our online visibility.",
-    name: "John Doe",
-    image: "/assets/img/all-images/testimonial-img1.png",
-  },
-  {
-    text: "Working with SEOC has been a game-changer for our business. Their expertise in SEO and digital marketing has helped us achieve remarkable results and significantly increase our online visibility.",
-    name: "John Doe",
-    image: "/assets/img/all-images/testimonial-img2.png",
-  },
-  {
-    text: "Working with SEOC has been a game-changer for our business. Their expertise in SEO and digital marketing has helped us achieve remarkable results and significantly increase our online visibility.",
-    name: "John Doe",
-    image: "/assets/img/all-images/testimonial-img2.png",
-  },
-];
+// const testimonials = [
+//   {
+//     text: "Working with SEOC has been a game-changer for our business. Their expertise in SEO and digital marketing has helped us achieve remarkable results and significantly increase our online visibility.",
+//     name: "John Doe",
+//     image: "/assets/img/all-images/testimonial-img1.png",
+//   },
+//   {
+//     text: "Working with SEOC has been a game-changer for our business. Their expertise in SEO and digital marketing has helped us achieve remarkable results and significantly increase our online visibility.",
+//     name: "John Doe",
+//     image: "/assets/img/all-images/testimonial-img2.png",
+//   },
+//   {
+//     text: "Working with SEOC has been a game-changer for our business. Their expertise in SEO and digital marketing has helped us achieve remarkable results and significantly increase our online visibility.",
+//     name: "John Doe",
+//     image: "/assets/img/all-images/testimonial-img2.png",
+//   },
+// ];
 
 export default GoogleReviews;

@@ -1,53 +1,53 @@
-import { useState } from "react";
-import { Link } from "react-router-dom";
+// import { useState } from "react";
+// import { Link } from "react-router-dom";
 
-const caseStudies = [
-  {
-    title: "Website Design & Development",
-    content: "",
-    image: "/assets/img/all-images/case-img1.png",
-    thumbClass: "",
-  },
-  {
-    title: "SEO",
-    content: "",
-    image: "/assets/img/all-images/case-img2.png",
-    thumbClass: "cs_case_study_thumb2",
-  },
-  {
-    title: "PPC Advertising",
-    content: "",
-    image: "/assets/img/all-images/case-img3.png",
-    thumbClass: "cs_case_study_thumb3",
-  },
-  {
-    title: "Social Media Marketing",
-    content: "",
-    image: "/assets/img/all-images/case-img4.png",
-    thumbClass: "cs_case_study_thumb4",
-  },
-  {
-    title: "Content Marketing",
-    content: "",
-    image: "/assets/img/all-images/case-img5.png",
-    thumbClass: "cs_case_study_thumb5",
-  },
-  {
-    title: "Email Marketing",
-    content: "",
-    image: "/assets/img/all-images/case-img6.png",
-    thumbClass: "cs_case_study_thumb6",
-  },
-  {
-    title: "Analytics & Reporting",
-    content: "",
-    image: "/assets/img/all-images/case-img7.png",
-    thumbClass: "cs_case_study_thumb7",
-  },
-];
+// const caseStudies = [
+//   {
+//     title: "Website Design & Development",
+//     content: "",
+//     image: "/assets/img/all-images/case-img1.png",
+//     thumbClass: "",
+//   },
+//   {
+//     title: "SEO",
+//     content: "",
+//     image: "/assets/img/all-images/case-img2.png",
+//     thumbClass: "cs_case_study_thumb2",
+//   },
+//   {
+//     title: "PPC Advertising",
+//     content: "",
+//     image: "/assets/img/all-images/case-img3.png",
+//     thumbClass: "cs_case_study_thumb3",
+//   },
+//   {
+//     title: "Social Media Marketing",
+//     content: "",
+//     image: "/assets/img/all-images/case-img4.png",
+//     thumbClass: "cs_case_study_thumb4",
+//   },
+//   {
+//     title: "Content Marketing",
+//     content: "",
+//     image: "/assets/img/all-images/case-img5.png",
+//     thumbClass: "cs_case_study_thumb5",
+//   },
+//   {
+//     title: "Email Marketing",
+//     content: "",
+//     image: "/assets/img/all-images/case-img6.png",
+//     thumbClass: "cs_case_study_thumb6",
+//   },
+//   {
+//     title: "Analytics & Reporting",
+//     content: "",
+//     image: "/assets/img/all-images/case-img7.png",
+//     thumbClass: "cs_case_study_thumb7",
+//   },
+// ];
 
 const BenefitsSection = () => {
-  const [activeIndex, setActiveIndex] = useState(0);
+  // const [activeIndex, setActiveIndex] = useState(0);
 
   return (
     <div className="case1-section-area">

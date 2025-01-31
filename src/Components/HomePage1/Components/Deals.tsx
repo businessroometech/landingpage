@@ -1,6 +1,6 @@
-import React from 'react';
+// import React from 'react';
 
-const DealCard = ({ startupType }) => (
+const DealCard = (startupType:any) => (
   <div style={{
     backgroundColor: '#ccd6f0',
     borderRadius: '8px',

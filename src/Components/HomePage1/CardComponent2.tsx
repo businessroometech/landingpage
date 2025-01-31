@@ -1,8 +1,7 @@
-import React from 'react';
 import businessPitch1 from "../../assets/Pitch Deck Layout with Green Accents Stock Template.jpeg";
 import businessPitch2 from "../../assets/businessmen-thumbs-up-looking-camera.jpg";
 
-function Card({ imageSrc, style }) {
+function Card(imageSrc: any, style: any) {
   const cardStyle = {
     width: '360px', 
     height: "500px",
@@ -17,18 +16,19 @@ function Card({ imageSrc, style }) {
     justifyContent: 'center',
     overflow: 'hidden', // Ensures image does not exceed card boundaries
   };
-  const imageStyle = {
-    width: '100%', // Ensures it stretches to full width
-    height: '100%', // Ensures it fills the height
-    objectFit: 'cover', // Keeps aspect ratio while covering the card
-    borderRadius: '15px',
-  };
+  // const imageStyle = {
+  //   width: '100%', // Ensures it stretches to full width
+  //   height: '100%', // Ensures it fills the height
+  //   objectFit: 'cover', // Keeps aspect ratio while covering the card
+  //   borderRadius: '15px',
+  // };
 
 
   return (
     <div style={{ ...cardStyle, ...style }}>
     <img src={imageSrc} alt="Business Pitch" 
-         style={imageStyle} />
+        //  style={imageStyle} 
+         />
   </div>
   );
 }
