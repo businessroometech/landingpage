@@ -25,15 +25,15 @@ const Hero: React.FC = () => {
                 <img src="/assets/img/icons/logo-icons.svg" alt="" />Top #1
                 SEO & Marketing Agency
               </h5> */}
-              <h1 className="" style={{ color: '#2C3E50' }} >
+                <h1 className="" style={{ color: '#2C3E50', fontSize: '3.5rem' }} >
                 The Game-changing community of Founders, Investors, and Acquirers
-              </h1>
-              <h4 data-aos="fade-left" data-aos-duration="1000" 
+                </h1>
+              {/* <h4 data-aos="fade-left" data-aos-duration="1000" 
                   style={{color : '#2C3E50' ,fontSize : '1.5rem', fontWeight: '600', lineHeight : '1.6', maxWidth : '800px'}}>
                   Empowering connections between visionary founders, strategic investors, and ambitious acquirers,  
                   <br className="d-lg-block d-none" />
                   fostering collaboration, growth, and opportunities<br/> across the startup ecosystem.
-              </h4>
+              </h4> */}
               <div
                 className="btn-area"
                 data-aos="fade-left"

@@ -7,101 +7,78 @@ import Features from "./Components/Features";
 import MyDeals from "./Components/Deals";
 import ChatInterface from "./Components/Chats";
 import DottedLineAnimation from "./Components/DottedLine";
+import CardComponent3 from "./CardComponent3";
+import CardComponent4 from "./CardComponent4";
 const AboutSection: React.FC = () => {
   return (
     <>
-    <div className="about1-section-area sp6" id="about"   style={{ backgroundImage: `url(${gradient})`,  }}>
+    <div className="about1-section-area sp6" id="about" style={{ backgroundImage: `url(${gradient})`, height: '120vh' }}>
       <div className="container-fluid">
         <div className="row align-items-center">
-          <div className="col-lg-4">
-            <div className="about-images" >
-              
-              <figure
-              style={{height:"100%"}}
-              
-                className="image-anime"
-                data-aos="fade-zoom-in"
-                data-aos-delay="300"
-                data-aos-offset="0"
-              >
-                <img
-                  src={businessman}
-                  alt="About"
-                  style={{borderRadius: "300px 300px 300px 300px", width:"550px"}}
-                  
-                />
-               
-                
-              </figure>
-               {/* <img
-                src={imagelogo}
-                alt="Star"
-                className="star1 keyframe5"
-                style={{color: "blue", objectFit:"contain"}}
-              /> */}
-               
-              
-              
+            <div className="col-lg-4" style={{ marginTop: '-140px' }}>
+            <div className="about-images" style={{ transform: 'scale(0.8)' }}>
+              <CardComponent3 />
             </div>
-          </div>
-          <div className="col-lg-5">
+            </div>
+            <div className="col-lg-5" style={{ paddingBottom: '80px' }}>
             <div className="about-content-area heading2">
               {/* <div className="arrow-circle">
-                <Link to="/about">
-                  <img
-                    src="/assets/img/elements/elements4.png"
-                    alt="Element"
-                    className="elements4 keyframe5"
-                  />
-                  <img
-                    src="/assets/img/icons/arrow.svg"
-                    alt="Arrow"
-                    className="arrow"
-                  />
-                </Link>
+              <Link to="/about">
+                <img
+                src="/assets/img/elements/elements4.png"
+                alt="Element"
+                className="elements4 keyframe5"
+                />
+                <img
+                src="/assets/img/icons/arrow.svg"
+                alt="Arrow"
+                className="arrow"
+                />
+              </Link>
               </div> */}
-              <h2 className="text-anime-style-3" style={{fontSize:"40px", marginLeft:"25px" }}>
+              <h2 className="text-anime-style-3" style={{fontSize:"40px"}}>
               Fostering connections between  co-founders and investors 
               </h2>
-              <p data-aos="fade-left" data-aos-duration="1000" style={{fontSize: "20px"}}>
+              {/* <p data-aos="fade-left" data-aos-duration="1000" style={{fontSize: "20px"}}>
               We foster meaningful connections between co-founders and investors, creating opportunities for collaboration, innovation, and long-term growth. By bridging the gap between visionary entrepreneurs and strategic investors, we empower businesses to thrive, scale, and make a lasting impact in their industries.
-              </p>
+              </p> */}
               <div
-                className="btn-area"
-                data-aos="fade-left"
-                data-aos-duration="1200"
+              className="btn-area"
+              data-aos="fade-left"
+              data-aos-duration="1200"
               >
                <Link to="/about" className="header-btn1" style={{backgroundColor : '#3DAEF4'}}>
-                  Get Started With Businessroom
-                  <span>
-                    <i className="fa-solid fa-arrow-right" style={{color : '#3DAEF4'}}></i>
-                  </span>
-                </Link> 
+                Get Started With Businessroom
+                <span>
+                <i className="fa-solid fa-arrow-right" style={{color : '#3DAEF4'}}></i>
+                </span>
+              </Link> 
               </div>
             </div>
           </div>
-          <div className="col-lg-3">
-            <div className="about-auhtor-images">
+            <div className="col-lg-3" >
+            <div className="about-auhtor-images" style={{ transform: 'scale(0.8)' }}>
                {/* <img
-                src="/assets/img/elements/elements5.png"
-                alt="Element"
-                className="elements5 keyframe5"
+              src="/assets/img/elements/elements5.png"
+              alt="Element"
+              className="elements5 keyframe5"
               />  */}
-              <figure
-                className="image-anime"
-                data-aos="fade-zoom-in"
-                data-aos-delay="300"
-                data-aos-offset="0"
+              {/* <figure
+              className="image-anime"
+              data-aos="fade-zoom-in"
+              data-aos-delay="300"
+              data-aos-offset="0"
               >
-                <img
-                style={{borderRadius: "200px 200px 200px 200px"}}
-                  src={businessman2}
-                  alt="About Author"
-                />
-                
-              </figure>
+              <img
+              style={{borderRadius: "200px 200px 200px 200px"}}
+                src={businessman2}
+                alt="About Author"
+              />
+              
+              </figure> */}
+              <CardComponent4></CardComponent4>
             </div>
-          </div>
+            </div>
         </div>
       </div>
       
@@ -109,14 +86,14 @@ const AboutSection: React.FC = () => {
     
     {/*.....................................................................................*/}
 
-    <div 
+    {/* <div 
       style={{ backgroundColor : '#f8faff',height : '100vh',display : 'flex',flexDirection : 'column',alignItems : 'center',justifyContent : 'center'}}
     >
       {/* <img
         src="/assets/img/elements/elements1.png"
         alt=""
         className="elements1 aniamtion-key-1"
-      /> */}
+      /> 
       
       <div style={{width : '100%',height : '25%', backgroundColor : ''}}>
         <div style={{display : 'flex',alignItems : 'center',justifyContent : 'center',height : '100%'}}>
@@ -211,12 +188,12 @@ const AboutSection: React.FC = () => {
 
 
         </div>
-      </div> */}
+      </div> 
     </div>
 
 
 
-
+ */}
 
 </>
 

@@ -75,11 +75,11 @@ const StartupLanding = () => {
 
         </p>
 
-        <div style={{ marginBottom: '32px' }}>
+        {/* <div style={{ marginBottom: '32px' }}>
           <Feature text="Presenting your concept, project, or business proposal in a clear and compelling way to attract interest." />
           <Feature text="The audience isn’t limited to a specific region; instead, it includes people from different cultures, industries, and backgrounds worldwide." />
           <Feature text="Beyond just sharing an idea, the goal is to create valuable relationships, whether they be partnerships or  mentorships." />
-        </div>
+        </div> */}
 
         <button style={{
           backgroundColor: '#1e293b',

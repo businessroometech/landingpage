@@ -134,7 +134,6 @@ const ContactSection: React.FC = () => {
     { value: "United States", label: "United States" },
     { value: "Zimbabwe", label: "Zimbabwe" },
   ];
-  
 
   return (
     <div className="contact1-section-area sp6" style={{height : '100vh'}} id="contact">
@@ -142,16 +141,6 @@ const ContactSection: React.FC = () => {
         <div className="row">
           <div className="col-lg-12 m-auto">
             <div className="contact-header-area text-center heading2">
-              {/* <img
-                src="/assets/img/elements/star2.png"
-                alt=""
-                className="star2 keyframe5"
-              />
-              <img
-                src="/assets/img/elements/star2.png"
-                alt=""
-                className="star3 keyframe5"
-              /> */}
               <h2 className="text-anime-style-3">Get In Touch With Us Today</h2>
               <p>
                 We're here to help! If you have any questions or would like to
@@ -165,6 +154,7 @@ const ContactSection: React.FC = () => {
             className="col-lg-5"
             data-aos="zoom-out"
             data-aos-duration="1000"
+            data-aos-delay="200"
           >
             <div className="contact-info-area">
               <h3>Contact Info</h3>
@@ -218,6 +208,7 @@ const ContactSection: React.FC = () => {
             className="col-lg-7"
             data-aos="zoom-out"
             data-aos-duration="1200"
+            data-aos-delay="400"
           >
             <div className="contact-boxarea">
               <h3>Get In Touch</h3>
@@ -243,15 +234,6 @@ const ContactSection: React.FC = () => {
                       <input
                         type="email"
                         placeholder="Email Address"
-                        required
-                      />
-                    </div>
-                  </div>
-                  <div className="col-lg-6">
-                    <div className="input-area">
-                      <input
-                        type="number"
-                        placeholder="Phone Number"
                         required
                       />
                     </div>
