@@ -1,4 +1,6 @@
+import { color } from "framer-motion";
 import React from "react";
+import { TbBackground } from "react-icons/tb";
 import { Link } from "react-router-dom";
 import Select from "react-select";
 
@@ -178,16 +180,16 @@ const ContactSection: React.FC = () => {
               </div>
               <div className="space40"></div>
               <div className="contact-author-box">
-                <div className="icons">
+                {/* <div className="icons">
                   <img src="/assets/img/icons/phone2.svg" alt="" />
-                </div>
-                <div className="content">
+                </div> */}
+                {/* <div className="content">
                   <h4>Phone Number</h4>
                   <Link to="tel:123-456-7890">
                     123-456-7890 <br />
                     
                   </Link>
-                </div>
+                </div> */}
               </div>
               <div className="space40"></div>
               <div className="contact-author-box">
@@ -238,6 +240,15 @@ const ContactSection: React.FC = () => {
                       />
                     </div>
                   </div>
+                  <div className="col-lg-6">
+                    <div className="input-area">
+                      <input
+                        type="number"
+                        placeholder="Phone number"
+                        required
+                      />
+                    </div>
+                  </div>
                   <div className="col-lg-12">
                     <div className="input-area mt-4">
                       <Select className="country-area" options={options} />
@@ -250,10 +261,10 @@ const ContactSection: React.FC = () => {
                   </div>
                   <div className="col-lg-12">
                     <div className="input-area">
-                      <button className="header-btn1">
+                      <button className="header-btn1"  style={{backgroundColor:"#3DAEF4"}} onMouseLeave={(e) => e.currentTarget.style.color = "#fff"}>
                         Submit
-                        <span>
-                          <i className="fa-solid fa-arrow-right"></i>
+                        <span> 
+                            <i className="fa-solid fa-arrow-right" style={{color:"#3DAEF4"}}></i>
                         </span>
                       </button>
                     </div>

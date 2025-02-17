@@ -25,7 +25,7 @@ const Hero: React.FC = () => {
                 <img src="/assets/img/icons/logo-icons.svg" alt="" />Top #1
                 SEO & Marketing Agency
               </h5> */}
-                <h1 className="" style={{ color: '#2C3E50', fontSize: '3.5rem' }} >
+                <h1 className="" style={{ color: '#2C3E50', fontSize: '3.5rem', marginLeft:'3rem' }} >
                 The Game-changing community of Founders, Investors, and Acquirers
                 </h1>
               {/* <h4 data-aos="fade-left" data-aos-duration="1000" 

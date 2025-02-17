@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import imagelogo from "../assets/br blue.png"
+import businessroomLogo from "../assets/businessroom-logo.png"
 interface MenuItem {
   label: string;
   to: string;
@@ -147,9 +148,12 @@ const Header: React.FC = () => {
           <div className="col-lg-12">
             <div className="header-elements">
               <div className="site-logo" style={{height : "350px", width: "350px",marginTop : '8px',marginLeft : '80px'}}>
-                <Link to="/">
+                <div className="d-flex align-items-center">
+                  <img src={businessroomLogo} alt="Business Room Logo" style={{ height: "45px", width: "45px", marginRight: "10px" }} />
+                  <Link to="/">
                   <img src={imagelogo} alt="Logo" />
-                </Link>
+                  </Link>
+                </div>
               </div>
               <div className="main-menu">
                 <ul className="m-0">
