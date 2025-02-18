@@ -3,12 +3,12 @@ import Avatar1 from '../../assets/fn-1.jpg';
 import Avatar2 from '../../assets/fn-2.jpg';
 
 const messagesData = [
-  { text: "Hi, I want to sell my startup.", avatar: Avatar1, sender: "manager" },
-  { text: "Interesting! I’m looking to buy a promising startup.", avatar: Avatar2, sender: "user" },
-  { text: "It's a platform that helps businesses automate customer support and respond faster.", avatar: Avatar1, sender: "manager" },
-  { text: "That sounds promising. What’s your expected valuation?", avatar: Avatar2, sender: "user" },
-//   { text: "I’m aiming for $500k based on current revenue and projections.", avatar: Avatar1, sender: "manager" },
-//   { text: "Let’s schedule a call to discuss further.", avatar: Avatar2, sender: "user" }
+  { text: "Hi, we're building an automation platform and growing fast.", avatar: Avatar1, sender: "manager" },
+  { text: "Impressive. What is your biggest challenge right now?", avatar: Avatar2, sender: "user" },
+  { text: "Scaling our team and refining our AI.", avatar: Avatar1, sender: "manager" },
+  { text: "Send me the details, and we'll set up a follow-up.", avatar: Avatar2, sender: "user" },
+  // { text: "I’m aiming for $500k based on current revenue and projections.", avatar: Avatar1, sender: "manager" },
+  // { text: "Let’s schedule a call to discuss further.", avatar: Avatar2, sender: "user" }
 ];
 
 function ChatBubble({ text, avatar, sender, isHighlighted }) {

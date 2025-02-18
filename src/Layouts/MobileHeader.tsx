@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Container, Row, Col } from "react-bootstrap";
 import singlePageNavLinks from "../../public/assets/helpers/SinglePageNavLinks";
+import businessroomLogo from "../../src/assets/businessroom-logo.png";
 
 type NavItem = {
   title: string;
@@ -415,17 +416,22 @@ const MobileHeaderSidebar: React.FC = () => {
   return (
     <>
       <MobileHeader
-        onToggleSidebar={toggleSidebar}
-        logoUrl={logoUrl}
-        headerClass={headerClass}
+      onToggleSidebar={toggleSidebar}
+      logoUrl={businessroomLogo}
+      headerClass={headerClass}
       />
       <MobileSidebar
-        isOpen={isSidebarOpen}
-        onClose={toggleSidebar}
-        logoUrl={logoUrl}
-        sidebarClass={sidebarClass}
-        btnClass={btnClass}
+      isOpen={isSidebarOpen}
+      onClose={toggleSidebar}
+      logoUrl={businessroomLogo}
+      sidebarClass={sidebarClass}
+      btnClass={btnClass}
       />
+      <style jsx>{`
+      .mobile-logo img {
+        max-width: 60px; /* Adjust the size as needed */
+      }
+      `}</style>
     </>
   );
 };

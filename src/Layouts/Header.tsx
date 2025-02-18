@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import imagelogo from "../assets/br blue.png"
-import businessroomLogo from "../assets/businessroom-logo.png"
+import imagelogo from "../assets/br blue.png";
+import businessroomLogo from "../assets/businessroom-logo.png";
 interface MenuItem {
   label: string;
   to: string;
@@ -118,7 +118,6 @@ const Header: React.FC = () => {
 
   const toggleSearch = () => {
     setSearchOpen(!searchOpen);
-
   };
 
   useEffect(() => {
@@ -143,15 +142,31 @@ const Header: React.FC = () => {
         isSticky ? "sticky" : ""
       }`}
     >
-      <div className="" style={{ marginLeft:""}}>
-        <div className="row" >
+      <div className="" style={{ marginLeft: "" }}>
+        <div className="row">
           <div className="col-lg-12">
             <div className="header-elements">
-              <div className="site-logo" style={{height : "350px", width: "350px",marginTop : '8px',marginLeft : '80px'}}>
+              <div
+                className="site-logo"
+                style={{
+                  height: "350px",
+                  width: "350px",
+                  marginTop: "8px",
+                  marginLeft: "80px",
+                }}
+              >
                 <div className="d-flex align-items-center">
-                  <img src={businessroomLogo} alt="Business Room Logo" style={{ height: "45px", width: "45px", marginRight: "10px" }} />
+                  <img
+                    src={businessroomLogo}
+                    alt="Business Room Logo"
+                    style={{
+                      height: "45px",
+                      width: "45px",
+                      marginRight: "10px",
+                    }}
+                  />
                   <Link to="/">
-                  <img src={imagelogo} alt="Logo" />
+                    <img src={imagelogo} alt="Logo" />
                   </Link>
                 </div>
               </div>
@@ -241,7 +256,10 @@ const Header: React.FC = () => {
 
               {/* Search and Free Consultation Button Area */}
               <div className="btn-area">
-                <div className="search-icon header__search header-search-btn" onClick={toggleSearch}>
+                <div
+                  className="search-icon header__search header-search-btn"
+                  onClick={toggleSearch}
+                >
                   <Link to="#">
                     {/* <img
                       src="/assets/img/icons/search-icons1.svg"
@@ -249,42 +267,79 @@ const Header: React.FC = () => {
                     /> */}
                   </Link>
                   {/* Search Form */}
-              {searchOpen && (
-                <div className={`header-search-form-wrapper ${searchOpen ? 'open' : ''}`}>
-                  <div className="tx-search-close tx-close" onClick={toggleSearch}>
-                    <i className="fa-solid fa-xmark"></i>
-                  </div>
-                  <div className="header-search-container">
-                    <form role="search" className="search-form">
-                      <input
-                        type="search"
-                        className="search-field"
-                        placeholder="Search …"
-                        name="s"
-                      />
-                      <button type="submit" className="search-submit">
-                        <img
-                           src="/assets/img/icons/search-icons1.svg"
-                          alt="Search"
-                        />
-                      </button>
-                    </form>
-                  </div>
+                  {searchOpen && (
+                    <div
+                      className={`header-search-form-wrapper ${
+                        searchOpen ? "open" : ""
+                      }`}
+                    >
+                      <div
+                        className="tx-search-close tx-close"
+                        onClick={toggleSearch}
+                      >
+                        <i className="fa-solid fa-xmark"></i>
+                      </div>
+                      <div className="header-search-container">
+                        <form role="search" className="search-form">
+                          <input
+                            type="search"
+                            className="search-field"
+                            placeholder="Search …"
+                            name="s"
+                          />
+                          <button type="submit" className="search-submit">
+                            <img
+                              src="/assets/img/icons/search-icons1.svg"
+                              alt="Search"
+                            />
+                          </button>
+                        </form>
+                      </div>
+                    </div>
+                  )}
                 </div>
-              )}
-                </div>
-                <Link to="/http://54.177.193.30:5173/auth/sign-in" className="header-btn1" style={{marginTop:"-300px",marginRight : '80px',
-                  backgroundColor : "#3daef4"
-                }}>
-                  Get Started 
-                  <span>
-                    <i className="fa-solid fa-arrow-right" style={{color : '#3daef4'}}></i>
+                <Link
+                  to="/http://54.177.193.30:5173/auth/sign-in"
+                  style={{
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                    gap: "8px",
+                    padding: "10px 20px",
+                    color: "#ffffff",
+                    fontWeight: "bold",
+                    fontSize: "16px",
+                    textDecoration: "none",
+                    border: "none",
+                    cursor: "pointer",
+                    outline: "none",
+                    marginTop: "-300px",
+                    marginRight: "80px",
+                    backgroundColor: "#3daef4",
+                    borderRadius: "8px",
+                    height: "50px",
+                  }}
+             
+                >
+                  Get Started
+                  <span
+                    style={{
+                      width: "24px",
+                      height: "24px",
+                      backgroundColor: "white",
+                      borderRadius: "50%",
+                      display: "flex",
+                      alignItems: "center",
+                      justifyContent: "center",
+                    }}
+                  >
+                    <i
+                      className="fa-solid fa-arrow-right"
+                      style={{ color: "#3daef4" }}
+                    ></i>
                   </span>
                 </Link>
               </div>
-
-              
-
             </div>
           </div>
         </div>

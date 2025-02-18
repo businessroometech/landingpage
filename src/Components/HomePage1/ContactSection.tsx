@@ -45,7 +45,10 @@ const ContactSection: React.FC = () => {
     { value: "Colombia", label: "Colombia" },
     { value: "Comoros", label: "Comoros" },
     { value: "Congo (Congo-Brazzaville)", label: "Congo (Congo-Brazzaville)" },
-    { value: "Congo (Democratic Republic)", label: "Congo (Democratic Republic)" },
+    {
+      value: "Congo (Democratic Republic)",
+      label: "Congo (Democratic Republic)",
+    },
     { value: "Costa Rica", label: "Costa Rica" },
     { value: "Croatia", label: "Croatia" },
     { value: "Cuba", label: "Cuba" },
@@ -138,15 +141,19 @@ const ContactSection: React.FC = () => {
   ];
 
   return (
-    <div className="contact1-section-area sp6" style={{height : '100vh'}} id="contact">
-      <div className="container" style={{marginTop : '-140px'}}>
-        <div className="row">
-          <div className="col-lg-12 m-auto">
+    <div
+      className="contact1-section-area sp6"
+      style={{ height: "100vh" }}
+      id="contact"
+    >
+      <div className="container" style={{ marginTop: "-140px"}}>
+        <div className="row" >
+          <div className="col-lg-12 m-auto" >
             <div className="contact-header-area text-center heading2">
               <h2 className="text-anime-style-3">Get In Touch With Us Today</h2>
               <p>
                 We're here to help! If you have any questions or would like to
-                discuss 
+                discuss
               </p>
             </div>
           </div>
@@ -158,21 +165,29 @@ const ContactSection: React.FC = () => {
             data-aos-duration="1000"
             data-aos-delay="200"
           >
-            <div className="contact-info-area">
+            <div className="contact-info-area" >
               <h3>Contact Info</h3>
               <p>
                 We're here to help! If you have any questions or would like to
-                discuss 
+                discuss
               </p>
               <div className="space32"></div>
               <div className="contact-author-box">
-                <div className="icons">
+                <div
+                  style={{
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                    width: "100px",
+                    height: "40px",
+                  }}
+                >
                   <img src="/assets/img/icons/location2.svg" alt="" />
                 </div>
                 <div className="content">
                   <h4>Our Location</h4>
                   <Link to="#">
-                    30 N Gould St Ste R, Sheridan, 
+                    30 N Gould St Ste R, Sheridan,
                     <br className="d-lg-block d-none" />
                     WY 82801 , USA
                   </Link>
@@ -192,15 +207,28 @@ const ContactSection: React.FC = () => {
                 </div> */}
               </div>
               <div className="space40"></div>
-              <div className="contact-author-box">
-                <div className="icons">
-                  <img src="/assets/img/icons/email2.svg" alt="" />
+              <div className="contact-author-box" style={{paddingBottom: "110px"}}>
+                <div
+                  style={{
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                    width: "100px",
+                    height: "40px",
+                  }}
+                >
+                  <img
+                    src="/assets/img/icons/email2.svg"
+                    alt=""
+                    style={{ width: "100%", height: "100%" }}
+                  />
                 </div>
+                <div></div>
                 <div className="content">
                   <h4>Email Address</h4>
-                  <Link to="mailto:infoseoc@gmail.com">
-                  info@businessroom.ai<br />
-                 
+                  <Link to="mailto:infoseoc@gmail.com" >
+                    info@businessroom.ai
+                    <br />
                   </Link>
                 </div>
               </div>
@@ -217,7 +245,6 @@ const ContactSection: React.FC = () => {
               <p>
                 We're here to help! If you have any questions or would like to
                 discuss <br className="d-lg-block d-none" />
-                
               </p>
               <form action="https://api.web3forms.com/submit" method="POST">
                 <div className="row">
@@ -261,10 +288,40 @@ const ContactSection: React.FC = () => {
                   </div>
                   <div className="col-lg-12">
                     <div className="input-area">
-                      <button className="header-btn1"  style={{backgroundColor:"#3DAEF4"}} onMouseLeave={(e) => e.currentTarget.style.color = "#fff"}>
+                      <button
+                        style={{
+                          display: "flex",
+                          alignItems: "center",
+                          justifyContent: "center",
+                          gap: "8px",
+                          padding: "10px 20px",
+                          backgroundColor: "#3DAEF4",
+                          borderRadius: "8px",
+                          color: "#ffffff",
+                          fontWeight: "bold",
+                          fontSize: "16px",
+                          textDecoration: "none",
+                          border: "none",
+                          cursor: "pointer",
+                          outline: "none",
+                        }}
+                      >
                         Submit
-                        <span> 
-                            <i className="fa-solid fa-arrow-right" style={{color:"#3DAEF4"}}></i>
+                        <span
+                          style={{
+                            width: "24px",
+                            height: "24px",
+                            backgroundColor: "white",
+                            borderRadius: "50%",
+                            display: "flex",
+                            alignItems: "center",
+                            justifyContent: "center",
+                          }}
+                        >
+                          <i
+                            className="fa-solid fa-arrow-right"
+                            style={{ color: "#3DAEF4" }}
+                          ></i>
                         </span>
                       </button>
                     </div>

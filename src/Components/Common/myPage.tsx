@@ -126,10 +126,10 @@ const StartupLanding = () => {
         {/* </div> */}
         <div
           className="d-flex align-items-center vh-100"
-          style={{ background: "#F5F5F5", padding: "20px" }}
+          style={{ padding: "20px" }}
         >
           {/* Live Stream Container */}
-            <motion.div
+            <div
             className="shadow-lg rounded-4 overflow-hidden flex justify-content-left"
             style={{
               width: "600px",
@@ -223,7 +223,7 @@ const StartupLanding = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.3 }}
               >
-              Business Strategies
+              Zoe Wilson
               </motion.h5>
               <motion.p
               className="mb-2"
@@ -232,11 +232,11 @@ const StartupLanding = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.4 }}
               >
-              Zoe Wilson
+              Founder
               </motion.p>
               </div>
             </div>
-          </motion.div>
+          </div>
         </div>
 
         {/* <div style={{

@@ -10,14 +10,16 @@ const Hero: React.FC = () => {
   return (
     <div
       className="hero1-section-area"
-      style={{ backgroundImage: `url(${gradient})`, }}
+      // style={{ background: 'linear-gradient(135deg, #f9fcff 0%, #e0e7ff 100%)' }}
+      
+      // style={{ backgroundImage: `url(${gradient})`, }}
     >
       {/* <img
         src="/assets/img/elements/elements1.png"
         alt=""
         className="elements1 aniamtion-key-1"
       /> */}
-      <div className="container" style={{}}>
+      <div className="container" >
         <div className="row align-items-center" style={{ marginLeft: "-7%", }} >
           <div className="col-lg-6">
             <div className="header-main-content heading1" style={{ marginTop: '-150px' }}>
@@ -25,8 +27,8 @@ const Hero: React.FC = () => {
                 <img src="/assets/img/icons/logo-icons.svg" alt="" />Top #1
                 SEO & Marketing Agency
               </h5> */}
-                <h1 className="" style={{ color: '#2C3E50', fontSize: '3.5rem', marginLeft:'3rem' }} >
-                The Game-changing community of Founders, Investors, and Acquirers
+                <h1 className="" style={{ color: '#252525', fontSize: '40px', marginLeft:'2.9rem', paddingBottom:'3.9rem'}} >
+                A social media platform for Entrepreneurs and Investors to network, secure investments and build meaningful connections.
                 </h1>
               {/* <h4 data-aos="fade-left" data-aos-duration="1000" 
                   style={{color : '#2C3E50' ,fontSize : '1.5rem', fontWeight: '600', lineHeight : '1.6', maxWidth : '800px'}}>

@@ -5,8 +5,8 @@ import Avatar2 from '../../assets/fn-2.jpg';
 const messagesData = [
   { text: "Hi, I’m looking for a co-founder.", avatar: Avatar1, sender: "manager", time: "10:10 AM" },
   { text: "That sounds interesting! What’s your idea?", avatar: Avatar2, sender: "user", time: "10:12 AM" },
-  { text: "It’s a platform connecting startup founders with experienced mentors and investors.", avatar: Avatar1, sender: "manager", time: "10:15 AM" },
-  { text: "That’s a great concept! Many founders struggle with networking and guidance.", avatar: Avatar2, sender: "user", time: "10:18 AM" }
+  { text: "It’s an AI based platform working on AI agents.", avatar: Avatar1, sender: "manager", time: "10:15 AM" },
+  { text: "That’s a great concept! let's connect", avatar: Avatar2, sender: "user", time: "10:18 AM" }
 ];
 
 function ChatBubble({ text, avatar, sender, time, isHighlighted }) {

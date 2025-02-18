@@ -10,14 +10,14 @@ const Contact = () => {
   return (
     <>
       <Header />
-      <MobileHeaderSidebar />
+      {/* <MobileHeaderSidebar />
       <PageHero
         className="about-header-area"
         title={"Contact Us"}
         breadcrumb={["Home", "Contact Us"]}
-      />
+      /> */}
       <ContactMain />
-      <LocationSection />
+      {/* <LocationSection />
       <div className="mapouter">
         <div className="gmap_canvas">
           <iframe
@@ -31,7 +31,7 @@ const Contact = () => {
         </div>
       </div>
       <CtaSection />
-      <Footer />
+      <Footer /> */}
     </>
   );
 };
