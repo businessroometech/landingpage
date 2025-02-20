@@ -1,11 +1,11 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import gradient from "../../assets/v960-ning-31.jpg";
+// import { Link } from "react-router-dom";
+// import gradient from "../../assets/v960-ning-31.jpg";
 import CardComponent3 from "./CardComponent3";
 import CardComponent4 from "./CardComponent4";
 import RotatingCircle from "./Components/RotatingCircle";
 import RotatingCircle2 from "./Components/RotatingCircle2";
-import Businessroom from "../../assets/businessroom-logo.png";
+// import Businessroom from "../../assets/businessroom-logo.png";
 
 const AboutSection: React.FC = () => {
   return (

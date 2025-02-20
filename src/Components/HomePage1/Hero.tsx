@@ -1,8 +1,7 @@
 import React from "react";
-import gradient from "../../assets/v960-ning-31.jpg"
+// import gradient from "../../assets/v960-ning-31.jpg"
 import CardComponent from "./CardComponent";
-
-
+import CardComponentResponsive from "./CardComponentResponsive";
 
 
 
@@ -27,9 +26,10 @@ const Hero: React.FC = () => {
                 <img src="/assets/img/icons/logo-icons.svg" alt="" />Top #1
                 SEO & Marketing Agency
               </h5> */}
-                <h1 className="" style={{ color: '#252525', fontSize: '40px', marginLeft:'2.9rem', paddingBottom:'3.9rem'}} >
+                <h1 className="" style={{ color: '#252525', fontSize: '40px', marginLeft:'1rem', paddingBottom:'3.9rem'}} >
                 A social media platform for Entrepreneurs and Investors to network, secure investments and build meaningful connections.
                 </h1>
+
               {/* <h4 data-aos="fade-left" data-aos-duration="1000" 
                   style={{color : '#2C3E50' ,fontSize : '1.5rem', fontWeight: '600', lineHeight : '1.6', maxWidth : '800px'}}>
                   Empowering connections between visionary founders, strategic investors, and ambitious acquirers,  
@@ -65,10 +65,18 @@ const Hero: React.FC = () => {
                 <div className="img1" style={{ height: "700px" }}>
 
 
-                  <div style={{ marginRight: '45px', marginTop: "20px" }}>
+{/* real one  */}
+              <div style={{ marginRight: '45px', marginTop: "20px" }}
+              className="laptop-view"
+              >
+              <CardComponent ></CardComponent>
+              </div>
 
-                    <CardComponent ></CardComponent>
 
+                  <div style={{ marginRight: '45px', marginTop: "20px" }}
+                  className="mobile-view"
+                  >
+                    <CardComponentResponsive></CardComponentResponsive>
                   </div>
 
                   {/* <div style={{border:"solid Blue", height:"350px", width:"300px", marginLeft:"370px", marginTop:"-150px" , borderRadius:"20px"}}></div> */}

@@ -53,3 +53,30 @@ button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
+
+
+/*  */
+
+.laptop-view {
+  display: none;
+}
+
+/* Show only on laptop (1024px and above) */
+@media (min-width: 1024px) {
+  .laptop-view {
+    display: block;
+  }
+}
+
+
+.mobile-view {
+  display: block;
+}
+
+/* Hide on screens larger than 1024px (laptop and desktop) */
+@media (min-width: 1024px) {
+  .mobile-view {
+    display: none;
+    border-color: #6455E1;
+  }
+}
