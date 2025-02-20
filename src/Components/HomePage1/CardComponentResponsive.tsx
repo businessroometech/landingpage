@@ -123,10 +123,10 @@ import {
         alignItems: 'center',
         justifyContent: 'center'
       }}>
-        <div style={{marginRight : '4px',marginTop : '-285px',zIndex : 100}}>
+        <div style={{marginRight : '4px',marginTop : '-360px',zIndex : 100}}>
         <Card/>
         </div>
-        <div style={{marginTop : '136px', marginRight : '-55px',zIndex : 100}}>
+        <div style={{marginTop : '186px', marginRight : '-56px',zIndex : 100, }}>
           <Card2/>
         </div>
       </div>

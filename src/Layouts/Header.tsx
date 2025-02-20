@@ -299,7 +299,7 @@ const Header: React.FC = () => {
                   )}
                 </div>
                 <Link
-                  to="/http://54.177.193.30:5173/auth/sign-in"
+                  to="/contact"
                   style={{
                     display: "flex",
                     alignItems: "center",
@@ -321,7 +321,7 @@ const Header: React.FC = () => {
                   }}
              
                 >
-                  Get Started
+                  Sign Up
                   <span
                     style={{
                       width: "24px",

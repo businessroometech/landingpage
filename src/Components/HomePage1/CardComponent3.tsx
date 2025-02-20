@@ -46,7 +46,7 @@ function ChatComponent() {
   }, []);
 
   return (
-    <div style={{ width: '360px', borderRadius: '16px', backgroundColor: '#fff', boxShadow: '0 4px 12px rgba(0,0,0,0.1)', overflow: 'hidden', fontFamily: 'Arial, sans-serif' , borderTopLeftRadius: '0'}}>
+    <div style={{ width: '300px', borderRadius: '16px', backgroundColor: '#fff', boxShadow: '0 4px 12px rgba(0,0,0,0.1)', overflow: 'hidden', fontFamily: 'Arial, sans-serif' , borderTopLeftRadius: '0'}}>
       {/* Header Section */}
       <div style={{ background: 'linear-gradient(135deg, #3DAEF4, #1D8DC5)', color: '#fff', padding: '16px', display: 'flex', alignItems: 'center', borderBottom: '1px solid #ddd' }}>
         <img src={Avatar1} alt="Founder" style={{ width: '40px', height: '40px', borderRadius: '50%', marginRight: '10px' }} />

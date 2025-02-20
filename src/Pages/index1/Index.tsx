@@ -1,3 +1,4 @@
+
 import AboutSection from "../../Components/HomePage1/AboutSection";
 import BenefitsSection from "../../Components/HomePage1/BenefitsSection";
 import BlogSection from "../../Components/HomePage1/BlogSection";
@@ -10,6 +11,8 @@ import ServiceSection2 from "../../Components/Common/ServiceSection2";
 import Header from "../../Layouts/Header";
 import Footer from "../../Layouts/Footer";
 import MobileHeaderSidebar from "../../Layouts/MobileHeader";
+
+
 
 const HomePage1 = () => {
   document.body.className = "homepage1-body";

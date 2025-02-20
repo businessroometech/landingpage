@@ -38,8 +38,8 @@ const CtaSection: React.FC = () => {
 
               <div
                 className="btn-area text-center"
-                data-aos="fade-up"
-                data-aos-duration="1200"
+                // data-aos="fade-up"
+                // data-aos-duration="1200"
               >
                 <Link
                   to="/contact"
@@ -79,6 +79,8 @@ const CtaSection: React.FC = () => {
                   </span>
                 </Link>
               </div>
+
+              
             </div>
           </div>
         </div>

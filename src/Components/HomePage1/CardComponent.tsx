@@ -105,7 +105,7 @@ function CardComponent() {
   return (
     <>
     <div style={{position : 'absolute',zIndex : 50,marginTop : '-88px',marginLeft : '85px'}}>
-      <svg width="500" height="530" viewBox="0 0 200 100" xmlns="http://www.w3.org/2000/svg">
+      <svg width="500" height="590" viewBox="0 0 200 100" xmlns="http://www.w3.org/2000/svg">
         <rect x="10" y="10" width="160" height="146" rx="10" ry="10" 
             fill="none" stroke="black" stroke-width="0.3" stroke-dasharray="6 3">
           <animate attributeName="stroke-dashoffset" from="0" to="-20" dur="1s" repeatCount="indefinite" />

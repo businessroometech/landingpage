@@ -26,7 +26,20 @@ const Hero: React.FC = () => {
                 <img src="/assets/img/icons/logo-icons.svg" alt="" />Top #1
                 SEO & Marketing Agency
               </h5> */}
-                <h1 className="" style={{ color: '#252525', fontSize: '40px', marginLeft:'1rem', paddingBottom:'3.9rem'}} >
+    
+    <style>
+    {`
+      @media (max-width: 768px) {
+        .header-main-content {
+          flex-direction: column !important;
+          align-items: center !important;
+          margin-top: -50px !important; /* Adjust margin for mobile */
+        }
+      }
+    `}
+  </style>
+
+                <h1 className="" style={{ color: '#252525', fontSize: '28px', marginLeft:'1rem', paddingBottom:'3.9rem'}} >
                 A social media platform for Entrepreneurs and Investors to network, secure investments and build meaningful connections.
                 </h1>
 

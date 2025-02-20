@@ -35,7 +35,7 @@ const ContactSection: React.FC = () => {
             <div className="contact-info-area">
               <h3>Contact Info</h3>
               <p>
-                We're here to help! If you have any questions or would like to
+                 If you have any questions or would like to
                 discuss how our SEO and digital marketing services can benefit
                 your business,
               </p>
@@ -85,7 +85,7 @@ const ContactSection: React.FC = () => {
             <div className="contact-boxarea">
               <h3>Get In Touch</h3>
               <p>
-                We're here to help! If you have any questions or would like to
+                If you have any questions or would like to
                 discuss how our SEO and digital marketing services can benefit
                 your business,
               </p>

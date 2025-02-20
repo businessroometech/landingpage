@@ -141,6 +141,15 @@ const ContactSection: React.FC = () => {
   ];
 
   return (
+
+
+    <div>
+
+    <div
+    className="laptop-view"
+    >
+
+    
     <div
       className="contact1-section-area sp6"
       style={{ height: "100vh" }}
@@ -152,7 +161,7 @@ const ContactSection: React.FC = () => {
             <div className="contact-header-area text-center heading2">
               <h2 className="text-anime-style-3">Get In Touch With Us Today</h2>
               <p>
-                We're here to help! If you have any questions or would like to
+                We're here to hel! If you have any questions or would like to
                 discuss
               </p>
             </div>
@@ -333,6 +342,218 @@ const ContactSection: React.FC = () => {
         </div>
       </div>
     </div>
+
+    </div>
+    
+
+
+{/* mobile view  */}
+    <div
+    className="mobile-view"
+    >
+
+    <div
+      className="contact1-section-area sp6"
+      style={{ height: "auto", backgroundColor: "" }}
+      id="contact"
+
+    >
+      <div className="container" style={{ marginTop: "-40px", }}>
+        <div className="row" >
+          <div className="col-lg-12 m-auto" >
+            <div className="contact-header-area text-center heading2">
+              <h2 className="text-anime-style-3 ">Get In Touch With Us Today</h2>
+              <p
+              
+              >
+                If you have any questions or would like to
+                discuss
+              </p>
+            </div>
+          </div>
+        </div>
+        <div className="row">
+          <div
+            className="col-lg-5"
+            data-aos="zoom-out"
+            data-aos-duration="1000"
+            data-aos-delay="200"
+          >
+            <div className="contact-info-area" >
+              <h3>Contact Info</h3>
+              <p>
+               If you have any questions or would like to
+                discuss
+              </p>
+              <div className="space32"></div>
+              <div className="contact-author-box">
+                <div
+                  style={{
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                    width: "100px",
+                    height: "40px",
+                  }}
+                >
+                  <img src="/assets/img/icons/location2.svg" alt="" />
+                </div>
+                <div className="content">
+                  <h4>Our Location</h4>
+                  <Link to="#">
+                    30 N Gould St Ste R, Sheridan,
+                    <br className="d-lg-block d-none" />
+                    WY 82801 , USA
+                  </Link>
+                </div>
+              </div>
+              <div className="space40"></div>
+              <div className="contact-author-box">
+                {/* <div className="icons">
+                  <img src="/assets/img/icons/phone2.svg" alt="" />
+                </div> */}
+                {/* <div className="content">
+                  <h4>Phone Number</h4>
+                  <Link to="tel:123-456-7890">
+                    123-456-7890 <br />
+                    
+                  </Link>
+                </div> */}
+              </div>
+              <div className="space40"></div>
+              <div className="contact-author-box" style={{paddingBottom: "110px"}}>
+                <div
+                  style={{
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                    width: "100px",
+                    height: "40px",
+                  }}
+                >
+                  <img
+                    src="/assets/img/icons/email2.svg"
+                    alt=""
+                    style={{ width: "100%", height: "100%" }}
+                  />
+                </div>
+                <div></div>
+                <div className="content">
+                  <h4>Email Address</h4>
+                  <Link to="mailto:infoseoc@gmail.com" >
+                    info@businessroom.ai
+                    <br />
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            className="col-lg-7"
+            data-aos="zoom-out"
+            data-aos-duration="1200"
+            data-aos-delay="400"
+          >
+            <div className="contact-boxarea">
+              <h3>Get In Touch</h3>
+              <p>
+                If you have any questions or would like to
+                discuss <br className="d-lg-block d-none" />
+              </p>
+              <form action="https://api.web3forms.com/submit" method="POST">
+                <div className="row">
+                  <div className="col-lg-6">
+                    <div className="input-area">
+                      <input type="text" placeholder="First Name" required />
+                    </div>
+                  </div>
+                  <div className="col-lg-6">
+                    <div className="input-area">
+                      <input type="text" placeholder="Last Name" required />
+                    </div>
+                  </div>
+                  <div className="col-lg-6">
+                    <div className="input-area">
+                      <input
+                        type="email"
+                        placeholder="Email Address"
+                        required
+                      />
+                    </div>
+                  </div>
+                  <div className="col-lg-6">
+                    <div className="input-area">
+                      <input
+                        type="number"
+                        placeholder="Phone number"
+                        required
+                      />
+                    </div>
+                  </div>
+                  <div className="col-lg-12">
+                    <div className="input-area mt-4">
+                      <Select className="country-area" options={options} />
+                    </div>
+                  </div>
+                  <div className="col-lg-12">
+                    <div className="input-area">
+                      <textarea placeholder="Your Message" required></textarea>
+                    </div>
+                  </div>
+                  <div className="col-lg-12">
+                    <div className="input-area">
+                      <button
+                        style={{
+                          display: "flex",
+                          alignItems: "center",
+                          justifyContent: "center",
+                          gap: "8px",
+                          padding: "10px 20px",
+                          backgroundColor: "#3DAEF4",
+                          borderRadius: "8px",
+                          color: "#ffffff",
+                          fontWeight: "bold",
+                          fontSize: "16px",
+                          textDecoration: "none",
+                          border: "none",
+                          cursor: "pointer",
+                          outline: "none",
+                        }}
+                      >
+                        Submit
+                        <span
+                          style={{
+                            width: "24px",
+                            height: "24px",
+                            backgroundColor: "white",
+                            borderRadius: "50%",
+                            display: "flex",
+                            alignItems: "center",
+                            justifyContent: "center",
+                          }}
+                        >
+                          <i
+                            className="fa-solid fa-arrow-right"
+                            style={{ color: "#3DAEF4" }}
+                          ></i>
+                        </span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+    </div>
+
+    </div>
+
+
   );
 };
 

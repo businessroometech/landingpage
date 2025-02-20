@@ -4,8 +4,8 @@ const RotatingCircle = () => {
   return (
     <div
     style={{
-      width: "350px",
-      height: "350px",
+      width: "250px",
+      height: "250px",
       padding: "20px",
       borderRadius: "0px 16px 16px 16px",
       backgroundColor: "#ffffff",

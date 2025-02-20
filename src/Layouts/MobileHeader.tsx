@@ -272,12 +272,66 @@ const MobileHeader: React.FC<{
                   <img src={logoUrl} alt="Logo" />
                 </Link>
               </div>
-              <div
+              {/* <div
                 className="mobile-nav-icon dots-menu"
                 onClick={onToggleSidebar}
               >
                 <i className="fa-solid fa-bars"></i>
-              </div>
+              </div> */}
+
+{/* signup button header */}
+              {/* <button className="text-white background-primary" onClick={"/contact"}>
+                Signup
+              </button> */}
+
+              
+                            <div
+                              className="btn-area text-center"
+                              // data-aos="fade-up"
+                              // data-aos-duration="1200"
+                            >
+                              <Link
+                                to="/contact"
+                                style={{
+                                  display: "flex",
+                                  alignItems: "center",
+                                  justifyContent: "center",
+                                  gap: "8px",
+                                  padding: "10px 20px",
+                                  backgroundColor: "#3DAEF4",
+                                  borderRadius: "8px",
+                                  color: "white",
+                                  fontWeight: "bold",
+                                  fontSize: "16px",
+                                  textDecoration: "none",
+                                  border: "none",
+                                  cursor: "pointer",
+                                  outline: "none",
+                                }}
+                              >
+                                Sign Up
+                                <span
+                                  style={{
+                                    width: "24px",
+                                    height: "24px",
+                                    backgroundColor: "#3DAEF4",
+                                    borderRadius: "50%",
+                                    display: "flex",
+                                    alignItems: "center",
+                                    justifyContent: "center",
+                                  }}
+                                >
+                                  <i
+                                    className="fa-solid fa-arrow-right"
+                                    style={{ color: "white" }}
+                                  ></i>
+                                </span>
+                              </Link>
+                            </div>
+              
+                            
+                            
+
             </div>
           </Col>
         </Row>

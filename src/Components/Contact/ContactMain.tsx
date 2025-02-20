@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import axios from "axios";
 import People from "../../assets/People.png";
-
+import businesslogo from "../../assets/businessroom-logo.png"
+import { AiFillCaretDown } from "react-icons/ai";
 const ContactMain: React.FC = () => {
   const [formData, setFormData] = useState({
     firstName: "",
@@ -188,8 +189,22 @@ const ContactMain: React.FC = () => {
           display: "flex",
           justifyContent: "space-between",
           alignItems: "center",
+          flexDirection: "row",
         }}
       >
+         <style>
+    {`
+      @media (max-width: 768px) {
+        div {
+          flex-direction: column !important;
+          justifyContent: "center",
+          alignItems: "center",
+          
+        }
+      }
+    `}
+  </style>
+
         <div
           className="contact-main-inner-area sp1"
           style={{
@@ -197,13 +212,27 @@ const ContactMain: React.FC = () => {
             flex: 1,
             justifyContent: "space-between",
             alignItems: "center",
-            paddingRight: "250px",
+            paddingRight: "200px",
+            backgroundColor: "white"
           }}
         >
           <div
             className="contact-form-area"
-            style={{ flex: 1, marginLeft: "80px" }}
+            style={{width:"350px", flex: 1, marginLeft: "160px", }}
           >
+             <style>
+    {`
+      @media (max-width: 768px) {
+        .header-main-content {
+        width: "20rem",
+          flex-direction: column !important;
+          align-items: center !important;
+          margin-top: -50px !important; /* Adjust margin for mobile */
+        }
+      }
+    `}
+  </style>
+
             <h4>Create your account</h4>
             <form onSubmit={handleSubmit}>
               <div className="row">
@@ -257,45 +286,95 @@ const ContactMain: React.FC = () => {
                     />
                   </div>
                 </div>
-                <div className="col-lg-12">
-                  <div
-                    className="input-area"
-                    style={{ marginBottom: "15px", marginTop: "15px" }}
-                  >
-                    <select
-                      className="form-control"
-                      name="country"
-                      style={{ height: "50px", border: "1px solid #e0e0e0" }}
-                      value={formData.country}
-                      onChange={handleChange}
-                      required
-                    >
-                      <option value="">Select Country</option>
-                      {options.map((option) => (
-                        <option key={option.value} value={option.value}>
-                          {option.label}
-                        </option>
-                      ))}
-                    </select>
-                  </div>
-                </div>
 
-                <div className="col-lg-12">
-                  <div className="input-area" style={{ marginTop: "11px" }}>
-                    <select
-                      className="form-control"
-                      name="role"
-                      style={{ height: "50px", border: "1px solid #e0e0e0" }}
-                      value={formData.role}
-                      onChange={handleChange}
-                      required
-                    >
-                      <option value="">Select Role</option>
-                      <option value="entrepreneur">Entrepreneur</option>
-                      <option value="investor">Investor</option>
-                    </select>
-                  </div>
-                </div>
+                
+              
+
+
+<div className="col-lg-12">
+      <div className="input-area" style={{ marginBottom: "15px", marginTop: "15px", position: "relative" }}>
+        <select
+          className="form-control"
+          name="country"
+          style={{
+            height: "50px",
+            width: "100%",
+            border: "1px solid #e0e0e0",
+            appearance: "none", // Hides default dropdown arrow
+            paddingRight: "40px", // Space for the icon
+            cursor: "pointer",
+          }}
+          value={formData.country}
+          onChange={handleChange}
+          required
+        >
+          <option value="">Select Country</option>
+          {options.map((option) => (
+            <option key={option.value} value={option.value}>
+              {option.label}
+            </option>
+          ))}
+        </select>
+
+        {/* Dropdown icon positioned on the right */}
+        <AiFillCaretDown
+          style={{
+            position: "absolute",
+            right: "15px",
+            top: "50%",
+            transform: "translateY(-50%)",
+            pointerEvents: "none",
+            color: "#888",
+          }}
+          size={20}
+        />
+      </div>
+    </div>
+
+
+
+<div className="col-lg-12">
+      <div className="input-area" style={{ marginTop: "11px", position: "relative" }}>
+        {/* Wrapping the select inside a positioned div */}
+        <select
+          className="form-control"
+          name="role"
+          style={{
+            height: "50px",
+            width: "100%",
+            border: "1px solid #e0e0e0",
+            appearance: "none", // Hides default dropdown arrow
+            paddingRight: "40px", // Makes space for the icon
+            cursor: "pointer",
+          }}
+          value={formData.role}
+          onChange={handleChange}
+          required
+        >
+          <option value="">Select Role</option>
+          <option value="entrepreneur">Entrepreneur</option>
+          <option value="investor">Investor</option>
+        </select>
+
+        {/* Dropdown icon positioned absolutely */}
+        <AiFillCaretDown
+          style={{
+            position: "absolute",
+            right: "15px",
+            top: "50%",
+            transform: "translateY(-50%)",
+            pointerEvents: "none", // Prevents clicking on icon instead of select
+            color: "#888",
+          }}
+          size={20}
+        />
+      </div>
+    </div>
+
+
+
+
+
                 <div className="col-lg-12">
                   <div className="input-area">
                     <button
@@ -344,8 +423,8 @@ const ContactMain: React.FC = () => {
             </form>
           </div>
         </div>
-        <div style={{ flex: 1, marginRight: "150px" }}>
-          <img src={People} alt="sign up" style={{ width: "100%" }} />
+        <div style={{ flex: 1, marginRight: "60px", backgroundColor: "white", display: "flex", justifyContent: "center", alignItems: "center" }}>
+          <img src={businesslogo} alt="sign up" style={{ width: "30%" }} />
         </div>
       </div>
     </>
